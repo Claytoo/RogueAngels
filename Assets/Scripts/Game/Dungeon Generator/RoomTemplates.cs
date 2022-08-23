@@ -12,6 +12,7 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] rightRooms;
 
     public GameObject closedRooms;
+    public GameObject barrierCollider;
 
     public List<GameObject> rooms;
 

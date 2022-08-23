@@ -8,6 +8,9 @@ public class Destroyer : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(col.gameObject);
+        if (col.tag == "Spawn Point" && col.GetComponent<RoomSpawner>().spawned)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -15,7 +15,7 @@ public class RoomSpawner : MonoBehaviour
   }
   public SpawnDirection spawnDirection;
   private RoomTemplates templates;
-  private bool spawned;
+  public bool spawned;
 
   public float waitTime = 4f;
 
@@ -57,14 +57,9 @@ public class RoomSpawner : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D col)
   {
-    if (col.CompareTag("Spawn Point"))
+    if (col.tag == "Spawn Point")
     {
-      if (col.GetComponent<RoomSpawner>().spawned == false && spawned == false)
-      {
-        Instantiate(templates.closedRooms, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-      }
-      spawned = true;
+      Destroy(gameObject);
     }
   }
 }
