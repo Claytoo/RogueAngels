@@ -16,11 +16,24 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         Move();
+        EnemyFlip();
     }
 
     void Move()
     {
         transform.position =
             Vector3.MoveTowards(transform.position, targetPlayer.position, enemySpeed * Time.deltaTime);
+    }
+
+    void EnemyFlip()
+    {
+        if (targetPlayer.position.x > transform.position.x)
+        {
+            transform.eulerAngles = Vector3.zero;
+        }
+        else
+        {
+            transform.eulerAngles = Vector3.up * 180;
+        }
     }
 }
