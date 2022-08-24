@@ -1,21 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("Players")]
+    #region _VAR
+    [Header("Player")]
     public GameObject playerPrefab;
     public float respawnTime;
-
-    [Header("Spawner")]
     public Transform[] playerSpawnPoints;
+
+    //[Header("Enemy")]
+    //public EnemySpawner enemySpawn;
+
+    [Header("Scriptable Object")]
+    public ScriptableInteger health;
+    #endregion
 
     public static GameManager instance;
 
+    public UnityAction OnGameOverAction;
+
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()

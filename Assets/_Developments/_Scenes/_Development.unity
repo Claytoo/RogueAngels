@@ -7847,7 +7847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1484927400
 MonoBehaviour:
@@ -7866,6 +7866,7 @@ MonoBehaviour:
   playerSpawnPoints:
   - {fileID: 698070237}
   - {fileID: 2139968185}
+  health: {fileID: 11400000, guid: 2fb480a1a68991f41bd4662ac12e2130, type: 2}
 --- !u!1 &1736929807
 GameObject:
   m_ObjectHideFlags: 0
@@ -8017,7 +8018,7 @@ Transform:
   - {fileID: 698070237}
   - {fileID: 2139968185}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023799365
 GameObject:

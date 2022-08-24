@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    #region _PLAYER VAR
     [Header("Info")]
     public float moveSpeed;
 
@@ -17,8 +15,8 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Animator anim;
     private Rigidbody2D rb;
+    #endregion
 
-    // local player
     public static PlayerController me;
 
     private void Awake()
@@ -35,14 +33,14 @@ public class PlayerController : MonoBehaviour
             Attack();
         }
         float mouseX = (Screen.width / 2) - Input.mousePosition.x;
-        if (mouseX < 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        //if (mouseX < 0)
+        //{
+        //    transform.localScale = new Vector3(1, 1, 1);
+        //}
+        //else
+        //{
+        //    transform.localScale = new Vector3(-1, 1, 1);
+        //}
     }
 
     void Move()
