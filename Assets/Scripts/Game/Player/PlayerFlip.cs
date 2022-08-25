@@ -1,17 +1,25 @@
+using System;
 using UnityEngine;
 
 public class PlayerFlip : MonoBehaviour
 {
+    private SpriteRenderer _renderer;
+
+    private void Awake()
+    {
+        _renderer = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         float mouseX = (Screen.width / 2) - Input.mousePosition.x;
         if (mouseX < 0)
         {
-            transform.parent.localScale = new Vector3(1, 1, 1);
+            _renderer.flipX = true;
         }
         else
         {
-            transform.parent.localScale = new Vector3(-1, 1, 1);
+            _renderer.flipX = false;
         }
     }
 }
