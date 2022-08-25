@@ -20,43 +20,59 @@ public class BossAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
-        bossAttacks[0].SetActive(true);
-        bossAttacks[1].SetActive(false);
-        bossAttacks[2].SetActive(false);
+        ActivateSkll1();
 
         yield return new WaitForSeconds(skill1Time);
         
-        bossAttacks[0].SetActive(false);
-        bossAttacks[1].SetActive(false);
-        bossAttacks[2].SetActive(false);
+        DeactivateAllSkill();
 
         yield return new WaitForSeconds(transitionTime);
         
-        bossAttacks[1].SetActive(true);
-        bossAttacks[0].SetActive(false);
-        bossAttacks[2].SetActive(false);
+        ActivateSkill2();
 
         yield return new WaitForSeconds(skill2Time);
         
-        bossAttacks[0].SetActive(false);
-        bossAttacks[1].SetActive(false);
-        bossAttacks[2].SetActive(false);
-
+        DeactivateAllSkill();
+        
         yield return new WaitForSeconds(transitionTime);
         
         
-        bossAttacks[2].SetActive(true);
-        bossAttacks[1].SetActive(false);
-        bossAttacks[0].SetActive(false);
+        ActivateSkill3();
 
         yield return new WaitForSeconds(skill3Time);
         
-        bossAttacks[0].SetActive(false);
-        bossAttacks[1].SetActive(false);
-        bossAttacks[2].SetActive(false);
+        DeactivateAllSkill();
 
         yield return new WaitForSeconds(transitionTime);
 
         StartCoroutine(Attack());
+    }
+
+    void ActivateSkll1()
+    {
+        bossAttacks[0].SetActive(true);
+        bossAttacks[1].SetActive(false);
+        bossAttacks[2].SetActive(false);
+    }
+
+    void ActivateSkill2()
+    {
+        bossAttacks[1].SetActive(true);
+        bossAttacks[0].SetActive(false);
+        bossAttacks[2].SetActive(false);
+    }
+
+    void ActivateSkill3()
+    {
+        bossAttacks[2].SetActive(true);
+        bossAttacks[1].SetActive(false);
+        bossAttacks[0].SetActive(false);
+    }
+
+    void DeactivateAllSkill()
+    {
+        bossAttacks[0].SetActive(false);
+        bossAttacks[1].SetActive(false);
+        bossAttacks[2].SetActive(false);
     }
 }
