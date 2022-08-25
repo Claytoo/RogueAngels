@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerFlip : MonoBehaviour
@@ -15,11 +14,11 @@ public class PlayerFlip : MonoBehaviour
         float mouseX = (Screen.width / 2) - Input.mousePosition.x;
         if (mouseX < 0)
         {
-            _renderer.flipX = true;
+            _renderer.flipX = false;
         }
         else
         {
-            _renderer.flipX = false;
+            _renderer.flipX = true;
         }
     }
 }

@@ -4,19 +4,31 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerController playerControl;
 
-    Vector2 moveDirection;
+    private Animator anim;
+
+    private Vector2 moveInput;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(x, y);
-        moveDirection = moveDirection.normalized;
-    }
+        //transform.position += new Vector3(moveInput.x * Time.deltaTime, moveInput.y * Time.deltaTime, 0f);
 
-    private void FixedUpdate()
-    {
-        playerControl.rigidBody.velocity = moveDirection * playerControl.moveSpeed;
+        playerControl.rigidBody.velocity = moveInput.normalized * playerControl.moveSpeed;
+
+        if (moveInput != Vector2.zero)
+        {
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
     }
 }
