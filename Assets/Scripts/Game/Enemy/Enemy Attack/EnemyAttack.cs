@@ -15,6 +15,7 @@ public class EnemyAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
+        yield return new WaitForSeconds(cooldownAttack);
         Instantiate(projectile, transform.position, transform.rotation);
         yield return new WaitForSeconds(cooldownAttack);
         StartCoroutine(Attack());
