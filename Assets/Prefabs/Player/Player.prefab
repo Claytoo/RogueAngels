@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1508963052355624466}
   - component: {fileID: 2528962221142628049}
   - component: {fileID: 4678807844026751235}
+  - component: {fileID: 7368210938527518425}
   m_Layer: 0
   m_Name: Aziel State
   m_TagString: Untagged
@@ -119,6 +120,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e07b3fe80ef7540a96f75770b0f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7368210938527518425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82729967973754729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55eab52ea8177140860e97a3b73a56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerControl: {fileID: 3419076956475263847}
 --- !u!1 &1900987819719075119
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +460,7 @@ MonoBehaviour:
   attackDelay: 3
   lastAttackTime: 0
   damage: 1
-  anim: {fileID: 0}
+  rigidBody: {fileID: 7536679323914721478}
   azielStateHandler: {fileID: 82729967973754729}
   belielStateHandler: {fileID: 5493226080063504863}
 --- !u!114 &7243514148202421176
@@ -508,7 +522,7 @@ MonoBehaviour:
   healthScriptable: {fileID: 11400000, guid: 2fb480a1a68991f41bd4662ac12e2130, type: 2}
   maxHealth: 0
   maxHealthScriptable: {fileID: 11400000, guid: 44d8292af93df694fb1bba802869684b, type: 2}
-  useScriptable: 1
+  useScriptable: 0
   healthSlider: {fileID: 0}
   OnLifeReachZero:
     m_PersistentCalls:
@@ -719,6 +733,7 @@ GameObject:
   - component: {fileID: 1049476208032074098}
   - component: {fileID: 3150146156114435254}
   - component: {fileID: 5645272024871752888}
+  - component: {fileID: 8751771191219672110}
   m_Layer: 0
   m_Name: Beliel State
   m_TagString: Untagged
@@ -826,6 +841,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e07b3fe80ef7540a96f75770b0f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8751771191219672110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493226080063504863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55eab52ea8177140860e97a3b73a56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerControl: {fileID: 3419076956475263847}
 --- !u!1 &6416630151694090964
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7517956124128689640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.927, y: -0.117, z: 0}
+  m_LocalPosition: {x: 1.134, y: -0.117, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []

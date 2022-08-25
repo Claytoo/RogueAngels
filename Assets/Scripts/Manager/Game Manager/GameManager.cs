@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+#if UNITY_EDITOR
+        Debug.Log("Press E for Change Player State!\n 1. Default State: Aziel\n 2. Second State: Beliel");
+#endif
     }
 
     private void Start()

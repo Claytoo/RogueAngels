@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     public int damage;
 
     [Header("Components")]
-    public Animator anim;
-    private Rigidbody2D rb;
+    public Rigidbody2D rigidBody;
 
     [Header("Player State Handler")]
     public GameObject azielStateHandler;
@@ -24,29 +23,14 @@ public class PlayerController : MonoBehaviour
 
     public static PlayerController me;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
     private void Update()
     {
-        Move();
-
         if (Input.GetMouseButtonDown(0) && Time.time - lastAttackTime > attackDelay)
         {
 
         }
 
         ChangeState();
-    }
-
-    void Move()
-    {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
-
-        rb.velocity = new Vector2(x, y) * moveSpeed;
     }
 
     internal void ChangeState()
