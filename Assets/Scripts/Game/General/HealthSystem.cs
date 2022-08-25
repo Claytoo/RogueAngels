@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -8,6 +5,8 @@ using UnityEngine.UI;
 public class HealthSystem : MonoBehaviour
 {
     #region _HEALTH VAR
+    [Header("Health Component")]
+    public Slider healthSlider;
     [HideInInspector] public int health;
     [HideInInspector] public ScriptableInteger healthScriptable;
 
@@ -17,7 +16,6 @@ public class HealthSystem : MonoBehaviour
     [HideInInspector] public bool useScriptable;
     #endregion
 
-    public Slider healthSlider;
     public UnityEvent OnLifeReachZero;
 
     private void Start()
@@ -51,19 +49,6 @@ public class HealthSystem : MonoBehaviour
             {
                 OnLifeReachZero?.Invoke();
             }
-        }
-    }
-
-    public void OnGain()
-    {
-        if (useScriptable)
-        {
-            healthScriptable.value = healthScriptable.value + 1 > maxHealthScriptable.value ? maxHealthScriptable.value : healthScriptable.value + 1;
-        }
-
-        else
-        {
-            health = health + 1 > maxHealth ? maxHealth : health + 1;
         }
     }
 }

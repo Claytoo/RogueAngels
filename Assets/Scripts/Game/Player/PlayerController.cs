@@ -12,16 +12,20 @@ public class PlayerController : MonoBehaviour
     public float lastAttackTime;
     public int damage;
 
-    [Header("Components")]
-    public Rigidbody2D rigidBody;
-
     [Header("Player State Handler")]
     public GameObject azielStateHandler;
     public GameObject belielStateHandler;
     private bool azielState = true;
+
+    [HideInInspector] public Rigidbody2D rigidBody;
     #endregion
 
     public static PlayerController me;
+
+    private void Awake()
+    {
+        rigidBody = GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
@@ -42,6 +46,7 @@ public class PlayerController : MonoBehaviour
                 belielStateHandler.SetActive(true);
                 azielState = false;
             }
+
             else
             {
                 azielStateHandler.SetActive(true);
