@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Boss_UltimateAttack : MonoBehaviour
 {
+    public float waitTime;
     public float attackTime;
     public float transitionTime;
     public GameObject[] lasers;
+    public GameObject[] lasersTrajectory;
 
     private void Start()
     {
@@ -16,42 +18,86 @@ public class Boss_UltimateAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
-        lasers[0].SetActive(true);
-        lasers[1].SetActive(false);
-        lasers[2].SetActive(false);
-
+        //activate laser 1
+        ActivateLaser1Trajectory();
+        yield return new WaitForSeconds(waitTime);
+        ActivateLaser1();
         yield return new WaitForSeconds(attackTime);
         
-        lasers[0].SetActive(false);
-        lasers[1].SetActive(false);
-        lasers[2].SetActive(false);
-
+        DeactivateAllLaser();
         yield return new WaitForSeconds(transitionTime);
         
-        lasers[0].SetActive(false);
-        lasers[1].SetActive(true);
-        lasers[2].SetActive(false);
-        
+        //activate laser 2
+        ActivateLaser2Trajectory();
+        yield return new WaitForSeconds(waitTime);
+        ActivateLaser2();
         yield return new WaitForSeconds(attackTime);
         
-        lasers[0].SetActive(false);
-        lasers[1].SetActive(false);
-        lasers[2].SetActive(false);
-        
+        DeactivateAllLaser();
         yield return new WaitForSeconds(transitionTime);
         
-        lasers[0].SetActive(false);
-        lasers[1].SetActive(false);
-        lasers[2].SetActive(true);
-        
+        //activate laser 3
+        ActivateLaser3Trajectory();
+        yield return new WaitForSeconds(waitTime);
+        ActivateLaser3();
         yield return new WaitForSeconds(attackTime);
         
-        lasers[0].SetActive(false);
-        lasers[1].SetActive(false);
-        lasers[2].SetActive(false);
-        
+        DeactivateAllLaser();
         yield return new WaitForSeconds(transitionTime);
 
         StartCoroutine(Attack());
+    }
+
+    void ActivateLaser1()
+    {
+        lasers[0].SetActive(true);
+        lasers[1].SetActive(false);
+        lasers[2].SetActive(false);
+    }
+
+    void ActivateLaser1Trajectory()
+    {
+        lasersTrajectory[0].SetActive(true);
+        lasersTrajectory[1].SetActive(false);
+        lasersTrajectory[2].SetActive(false);
+    }
+
+    void ActivateLaser2()
+    {
+        lasers[0].SetActive(false);
+        lasers[1].SetActive(true);
+        lasers[2].SetActive(false);
+    }
+    
+    void ActivateLaser2Trajectory()
+    {
+        lasersTrajectory[0].SetActive(false);
+        lasersTrajectory[1].SetActive(true);
+        lasersTrajectory[2].SetActive(false);
+    }
+
+    void ActivateLaser3()
+    {
+        lasers[0].SetActive(false);
+        lasers[1].SetActive(false);
+        lasers[2].SetActive(true);
+    }
+    
+    void ActivateLaser3Trajectory()
+    {
+        lasersTrajectory[0].SetActive(false);
+        lasersTrajectory[1].SetActive(false);
+        lasersTrajectory[2].SetActive(true);
+    }
+
+    void DeactivateAllLaser()
+    {
+        lasers[0].SetActive(false);
+        lasers[1].SetActive(false);
+        lasers[2].SetActive(false);
+        
+        lasersTrajectory[0].SetActive(false);
+        lasersTrajectory[1].SetActive(false);
+        lasersTrajectory[2].SetActive(false);
     }
 }
