@@ -10,9 +10,11 @@ public class EnemyHealth : MonoBehaviour
     public float totalHealth;
     public float currentHealth;
 
-    [Header("UI Slider")] 
-    public Vector3 offset;
+    [Header("UI Slider")]
     public Slider healthSlider;
+
+    [Header("Scriptable Value")]
+    public ScriptableInteger killCount;
 
     private void Start()
     {
@@ -23,11 +25,11 @@ public class EnemyHealth : MonoBehaviour
 
     private void Update()
     {
-        // healthSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + offset);
         healthSlider.value = currentHealth;
         
         if (currentHealth <= 0)
         {
+            killCount.value++;
             Destroy(gameObject);
         }
     }
