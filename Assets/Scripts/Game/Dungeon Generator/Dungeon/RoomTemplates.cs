@@ -11,14 +11,15 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] leftRooms;
     public GameObject[] rightRooms;
 
-    public GameObject closedRooms;
-    public GameObject barrierCollider;
-
     public List<GameObject> rooms;
+    public List<GameObject> enemySpawner;
+    public List<DungeonTransition> roomEntrance;
 
     public float waitTime;
     private bool spawnedBoss;
     public GameObject boss;
+
+    public float bossYPosition;
 
     private void Update()
     {
@@ -28,8 +29,12 @@ public class RoomTemplates : MonoBehaviour
             {
                 if (i == rooms.Count - 1)
                 {
-                    Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
-                    spawnedBoss = true;
+                    if (roomEntrance[i].playerEntered)
+                    {
+                        Destroy(enemySpawner[i]);
+                        Instantiate(boss, new Vector3(rooms[i].transform.position.x, rooms[i].transform.position.y + bossYPosition), Quaternion.identity);
+                        spawnedBoss = true;
+                    }
                 }
             }
         }

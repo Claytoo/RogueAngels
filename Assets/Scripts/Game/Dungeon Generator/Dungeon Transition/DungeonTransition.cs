@@ -7,7 +7,10 @@ public class DungeonTransition : MonoBehaviour
 {
     private Transform cam;
     public SpawnManager[] spawn;
+    public ScriptableInteger killCount;
     public bool isEntrance;
+    public bool playerEntered;
+    public DungeonManager dungeonManager;
 
     private void Start()
     {
@@ -18,7 +21,6 @@ public class DungeonTransition : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            // cam.position = new Vector3(transform.position.x, transform.position.y, -10);
             cam.position = Vector3.MoveTowards(cam.position,
                 new Vector3(transform.position.x, transform.position.y, -10), 50f * Time.deltaTime);
         }
@@ -28,9 +30,21 @@ public class DungeonTransition : MonoBehaviour
     {
         if (col.tag == "Player" && !isEntrance)
         {
+            playerEntered = true;
+            killCount.value = 0;
+            dungeonManager.CloseDoor();
             for (int i = 0; i < spawn.Length; i++)
             {
-                spawn[i].SpawnEnemies();
+                if (spawn[i] == null)
+                {
+                    return;
+                }
+                else
+                {
+                    spawn[i].SpawnEnemies();    
+                }
+                
+                
             }
         }
        

@@ -691,8 +691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 5
   currentHealth: 0
-  offset: {x: 0, y: 0, z: 0}
   healthSlider: {fileID: 4076925385666423998}
+  killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
 --- !u!114 &8541057278414707764
 MonoBehaviour:
   m_ObjectHideFlags: 0

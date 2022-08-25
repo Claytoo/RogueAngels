@@ -250,8 +250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 3
   currentHealth: 0
-  offset: {x: 0, y: 1.5, z: 0}
   healthSlider: {fileID: 6830017909333847855}
+  killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
 --- !u!114 &6120684676736843865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5837012714721497330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -375,7 +375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5837012714881882049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.81, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -403,6 +403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5837012714259865283}
     m_Modifications:
+    - target: {fileID: 1147922697335322077, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3581864575691197736, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_Name
       value: EnemyHealthSlider
