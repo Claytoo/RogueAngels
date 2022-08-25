@@ -585,7 +585,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entry Room
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2834774106874341922, guid: 653f77d6e8bb5414da8ee822c3f2d977, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 653f77d6e8bb5414da8ee822c3f2d977, type: 3}
 --- !u!1 &1263377353
 GameObject:
@@ -832,6 +833,14 @@ PrefabInstance:
     - target: {fileID: 7438205581388202154, guid: f1c08d5319531434faa4d2f9e4d872c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438205581388202155, guid: f1c08d5319531434faa4d2f9e4d872c4, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 4565494326918344487, guid: e3d2805a4e711a7439944d53b25fab87, type: 3}
+    - target: {fileID: 7438205581388202155, guid: f1c08d5319531434faa4d2f9e4d872c4, type: 3}
+      propertyPath: bossYPosition
+      value: 2.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1c08d5319531434faa4d2f9e4d872c4, type: 3}

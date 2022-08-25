@@ -9,6 +9,7 @@ public class DungeonTransition : MonoBehaviour
     public SpawnManager[] spawn;
     public ScriptableInteger killCount;
     public bool isEntrance;
+    public bool playerEntered;
     public DungeonManager dungeonManager;
 
     private void Start()
@@ -29,11 +30,20 @@ public class DungeonTransition : MonoBehaviour
     {
         if (col.tag == "Player" && !isEntrance)
         {
+            playerEntered = true;
             killCount.value = 0;
             dungeonManager.CloseDoor();
             for (int i = 0; i < spawn.Length; i++)
             {
-                spawn[i].SpawnEnemies();
+                if (spawn[i] == null)
+                {
+                    return;
+                }
+                else
+                {
+                    spawn[i].SpawnEnemies();    
+                }
+                
                 
             }
         }

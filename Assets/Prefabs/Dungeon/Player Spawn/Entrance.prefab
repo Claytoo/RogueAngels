@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8716190808279524633}
   - component: {fileID: 242117694775818998}
   - component: {fileID: 729025498}
+  - component: {fileID: 1449332283547500806}
   m_Layer: 0
   m_Name: Entrance
   m_TagString: Untagged
@@ -69,5 +70,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8752971aeca564243badc39fcc8558f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: []
+  killCount: {fileID: 0}
+  isEntrance: 0
+  playerEntered: 0
+  dungeonManager: {fileID: 0}
+--- !u!114 &1449332283547500806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448088617407367460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba25b5f01c4ada4c85b59abda205ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
