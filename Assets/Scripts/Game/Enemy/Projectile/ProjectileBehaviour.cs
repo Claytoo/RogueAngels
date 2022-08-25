@@ -20,7 +20,7 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Player")
+        if (col.tag == "Player" || col.tag == "Enemy")
         {
             Destroy(gameObject);
         }

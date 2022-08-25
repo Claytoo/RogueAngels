@@ -98,9 +98,10 @@ GameObject:
   - component: {fileID: 5837012714259865149}
   - component: {fileID: 5837012714259865148}
   - component: {fileID: 4941130064640420535}
+  - component: {fileID: 6120684676736843865}
   m_Layer: 0
   m_Name: Angel Soldier
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 5837012714259865281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.81, y: 2.87, z: 0}
-  m_LocalScale: {x: 1.2292023, y: 1.2292023, z: 1.2292023}
+  m_LocalScale: {x: 0.6642363, y: 0.6642363, z: 0.6642363}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5837012713819285899}
@@ -251,6 +252,37 @@ MonoBehaviour:
   currentHealth: 0
   offset: {x: 0, y: 1.5, z: 0}
   healthSlider: {fileID: 6830017909333847855}
+--- !u!114 &6120684676736843865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837012714259865281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96248aa7c08e20846883c22804ee65b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Bullet
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4941130064640420535}
+        m_TargetAssemblyTypeName: EnemyHealth, Assembly-CSharp
+        m_MethodName: TakeDamage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithGameobject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5837012714721497330
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5837012714721497330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0, z: 0}
+  m_LocalPosition: {x: 1.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -412,6 +444,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0031765245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0031765245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0031765245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -441,11 +485,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

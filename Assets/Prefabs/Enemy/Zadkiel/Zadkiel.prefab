@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5360124990214973940}
   - component: {fileID: 5360124990214973941}
   - component: {fileID: 7386262449730160290}
+  - component: {fileID: 6983137374137980736}
   m_Layer: 0
   m_Name: Zadkiel
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5360124990214973704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.31, y: 0.85, z: 0}
-  m_LocalScale: {x: 1.2292023, y: 1.2292023, z: 1.2292023}
+  m_LocalScale: {x: 0.6859686, y: 0.6859686, z: 0.6859686}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5360124991720644162}
@@ -167,6 +168,37 @@ MonoBehaviour:
   currentHealth: 0
   offset: {x: 0, y: 1.5, z: 0}
   healthSlider: {fileID: 6436732192996054914}
+--- !u!114 &6983137374137980736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360124990214973704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96248aa7c08e20846883c22804ee65b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Bullet
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7386262449730160290}
+        m_TargetAssemblyTypeName: EnemyHealth, Assembly-CSharp
+        m_MethodName: TakeDamage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithGameobject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5360124990341911901
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5360124990214973706}
     m_Modifications:
+    - target: {fileID: 1147922697335322077, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3581864575691197736, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_Name
       value: EnemyHealthSlider
@@ -612,6 +648,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0064372816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0064372816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0064372816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -645,7 +693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 2.01
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -658,6 +706,22 @@ PrefabInstance:
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 159.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 19.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 7029191292162784454, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchorMax.x

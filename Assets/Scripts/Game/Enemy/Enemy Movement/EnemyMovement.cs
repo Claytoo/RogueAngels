@@ -15,6 +15,11 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
+        if (targetPlayer == null)
+        {
+            return;
+        }
+        
         Move();
         EnemyFlip();
     }

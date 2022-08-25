@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 8054471785660509682}
   - component: {fileID: 8054471785660509684}
   - component: {fileID: -7007328548847007440}
+  - component: {fileID: 6135856201365138824}
   m_Layer: 0
   m_Name: Bomb Enemy
   m_TagString: Untagged
@@ -348,6 +349,37 @@ MonoBehaviour:
   currentHealth: 0
   offset: {x: 0, y: 1.5, z: 0}
   healthSlider: {fileID: 4239486002124681221}
+--- !u!114 &6135856201365138824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8054471785660509455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96248aa7c08e20846883c22804ee65b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Bullet
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -7007328548847007440}
+        m_TargetAssemblyTypeName: EnemyHealth, Assembly-CSharp
+        m_MethodName: TakeDamage
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithGameobject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6582321132449980331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,9 +387,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8054471785660509453}
     m_Modifications:
+    - target: {fileID: 1147922697335322077, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3581864575691197736, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_Name
       value: EnemyHealthSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581864575691197736, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_Pivot.x
@@ -396,6 +436,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0015228963
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.003206098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.003206098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -425,11 +477,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1.85
       objectReference: {fileID: 0}
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

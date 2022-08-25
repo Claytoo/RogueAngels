@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 7243514148202421176}
   - component: {fileID: 8564713685493059526}
   - component: {fileID: 8820203859891250199}
+  - component: {fileID: 840249148}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -356,6 +357,7 @@ MonoBehaviour:
   maxHealth: 0
   maxHealthScriptable: {fileID: 11400000, guid: 44d8292af93df694fb1bba802869684b, type: 2}
   useScriptable: 1
+  healthSlider: {fileID: 0}
   OnLifeReachZero:
     m_PersistentCalls:
       m_Calls:
@@ -371,6 +373,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &840249148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009240705196274355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3891a0e8534a04ebe7eaeb4744f8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 576041524394407807, guid: 0c4a395bdcfaf75479d5b091817bd31d, type: 3}
+  shootPoint: {fileID: 3234947648666004481}
 --- !u!1 &2009240705373277154
 GameObject:
   m_ObjectHideFlags: 0

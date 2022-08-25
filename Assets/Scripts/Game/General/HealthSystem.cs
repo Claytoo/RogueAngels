@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -15,7 +17,19 @@ public class HealthSystem : MonoBehaviour
     [HideInInspector] public bool useScriptable;
     #endregion
 
+    public Slider healthSlider;
     public UnityEvent OnLifeReachZero;
+
+    private void Start()
+    {
+        healthSlider.maxValue = maxHealthScriptable.value;
+        healthSlider.value = maxHealthScriptable.value;
+    }
+
+    private void Update()
+    {
+        healthSlider.value = healthScriptable.value;
+    }
 
     public void OnHit()
     {

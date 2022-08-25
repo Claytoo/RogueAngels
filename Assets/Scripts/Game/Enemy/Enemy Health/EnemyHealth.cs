@@ -23,8 +23,18 @@ public class EnemyHealth : MonoBehaviour
 
     private void Update()
     {
-        healthSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + offset);
+        // healthSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + offset);
         healthSlider.value = currentHealth;
+        
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
     }
     
 }
