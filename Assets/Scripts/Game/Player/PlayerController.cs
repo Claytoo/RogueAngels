@@ -15,6 +15,11 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Animator anim;
     private Rigidbody2D rb;
+
+    [Header("Player State Handler")]
+    public GameObject azielStateHandler;
+    public GameObject belielStateHandler;
+    private bool azielState = true;
     #endregion
 
     public static PlayerController me;
@@ -30,17 +35,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && Time.time - lastAttackTime > attackDelay)
         {
-            Attack();
+            //Attack();
         }
-        float mouseX = (Screen.width / 2) - Input.mousePosition.x;
-        //if (mouseX < 0)
-        //{
-        //    transform.localScale = new Vector3(1, 1, 1);
-        //}
-        //else
-        //{
-        //    transform.localScale = new Vector3(-1, 1, 1);
-        //}
     }
 
     void Move()
@@ -51,8 +47,25 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(x, y) * moveSpeed;
     }
 
-    void Attack()
+    //void Attack()
+    //{
+    //    anim.SetTrigger("Attack");
+    //}
+
+    internal void ChangeState()
     {
-        anim.SetTrigger("Attack");
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (azielState == true)
+            {
+                azielStateHandler.SetActive(false);
+                belielStateHandler.SetActive(true);
+            }
+            else
+            {
+                azielStateHandler.SetActive(true);
+                belielStateHandler.SetActive(false);
+            }
+        }
     }
 }
