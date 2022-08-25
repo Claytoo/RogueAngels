@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6755209981719108204}
   - component: {fileID: 1508963052355624466}
   - component: {fileID: 2528962221142628049}
+  - component: {fileID: 4678807844026751235}
   m_Layer: 0
   m_Name: Aziel State
   m_TagString: Untagged
@@ -106,6 +107,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4678807844026751235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82729967973754729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e07b3fe80ef7540a96f75770b0f11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900987819719075119
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +718,7 @@ GameObject:
   - component: {fileID: 1769813227062535460}
   - component: {fileID: 1049476208032074098}
   - component: {fileID: 3150146156114435254}
+  - component: {fileID: 5645272024871752888}
   m_Layer: 0
   m_Name: Beliel State
   m_TagString: Untagged
@@ -800,6 +814,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5645272024871752888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493226080063504863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e07b3fe80ef7540a96f75770b0f11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6416630151694090964
 GameObject:
   m_ObjectHideFlags: 0

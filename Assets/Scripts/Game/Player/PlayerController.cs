@@ -35,8 +35,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && Time.time - lastAttackTime > attackDelay)
         {
-            //Attack();
+
         }
+
+        ChangeState();
     }
 
     void Move()
@@ -47,11 +49,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(x, y) * moveSpeed;
     }
 
-    //void Attack()
-    //{
-    //    anim.SetTrigger("Attack");
-    //}
-
     internal void ChangeState()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -60,11 +57,13 @@ public class PlayerController : MonoBehaviour
             {
                 azielStateHandler.SetActive(false);
                 belielStateHandler.SetActive(true);
+                azielState = false;
             }
             else
             {
                 azielStateHandler.SetActive(true);
                 belielStateHandler.SetActive(false);
+                azielState = true;
             }
         }
     }
