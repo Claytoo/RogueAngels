@@ -23,9 +23,15 @@ public class EnemyAiming : MonoBehaviour
             return;
         }
         
-        Vector3 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        if (Vector3.Distance(transform.position, player.position) < 10)
+        {
+            Vector3 direction = player.position - transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            rb.rotation = angle;
+            Debug.Log("Player In Range");
+        }
+        
+        
     }
 
 }

@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
         }
         
         Move();
-        EnemyFlip();
+        // EnemyFlip();
     }
 
     void Move()
