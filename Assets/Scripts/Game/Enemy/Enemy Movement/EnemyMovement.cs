@@ -7,10 +7,12 @@ public class EnemyMovement : MonoBehaviour
 {
     public float enemySpeed = 1f;
     private Transform targetPlayer;
+    private SpriteRenderer _renderer;
 
     private void Awake()
     {
         targetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
+        _renderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -34,11 +36,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if (targetPlayer.position.x > transform.position.x)
         {
-            transform.eulerAngles = Vector3.zero;
+            _renderer.flipX = false;
         }
         else
         {
-            transform.eulerAngles = Vector3.up * 180;
+            _renderer.flipX = true;
         }
     }
 }
