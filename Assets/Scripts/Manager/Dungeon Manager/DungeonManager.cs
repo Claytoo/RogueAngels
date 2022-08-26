@@ -19,11 +19,16 @@ public class DungeonManager : MonoBehaviour
 
     public void CloseDoor()
     {
-        door.SetActive(true);
+        Invoke("LiterallyCloseDoor", .5f);
     }
 
     public void OpenDoor()
     {
         door.SetActive(false);
+    }
+
+    void LiterallyCloseDoor()
+    {
+        door.SetActive(true);
     }
 }
