@@ -626,6 +626,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  playerArmor: {fileID: 5498986799733591257}
 --- !u!114 &840249148
 MonoBehaviour:
   m_ObjectHideFlags: 0

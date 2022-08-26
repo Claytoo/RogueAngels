@@ -18,22 +18,32 @@ public class HealthSystem : MonoBehaviour
 
     public UnityEvent OnLifeReachZero;
 
+    public PlayerArmorSystem playerArmor;
+
     private void Start()
     {
         healthSlider.maxValue = maxHealthScriptable.value;
         healthSlider.value = maxHealthScriptable.value;
+
+        playerArmor.armorSlider.maxValue = playerArmor.maxArmorScriptable.value;
+        playerArmor.armorSlider.value = playerArmor.maxArmorScriptable.value;
     }
 
     private void Update()
     {
         healthSlider.value = healthScriptable.value;
+        playerArmor.armorSlider.value = playerArmor.armorScriptable.value;
     }
 
     public void OnHit()
     {
         if (useScriptable)
         {
-            healthScriptable.value = healthScriptable.value - 1 < 0 ? 0 : healthScriptable.value -1;
+            playerArmor.armorScriptable.value = playerArmor.armorScriptable.value - 1 < 0 ? 0 : playerArmor.armorScriptable.value - 1;
+            if (playerArmor.armorScriptable.value == 0)
+            {
+                healthScriptable.value = healthScriptable.value - 1 < 0 ? 0 : healthScriptable.value -1;
+            }
 
             if (healthScriptable.value <= 0)
             {
