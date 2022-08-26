@@ -37,6 +37,7 @@ public class EnemyHealth : MonoBehaviour
                 defeatBossChecker.condition = true;
             }
             killCount.value++;
+            GetComponent<ItemDrops>().DropItem();
             Destroy(gameObject);
         }
     }

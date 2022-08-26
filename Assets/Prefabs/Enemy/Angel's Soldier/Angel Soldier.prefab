@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4941130064640420535}
   - component: {fileID: 6120684676736843865}
   - component: {fileID: 1156903959}
+  - component: {fileID: 418001896163250024}
   m_Layer: 0
   m_Name: Angel Soldier
   m_TagString: Enemy
@@ -168,6 +169,8 @@ MonoBehaviour:
   currentHealth: 0
   healthSlider: {fileID: 6830017909333847855}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
+  defeatBossChecker: {fileID: 0}
+  isBoss: 0
 --- !u!114 &6120684676736843865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +222,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &418001896163250024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837012714259865281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efedacd0619cff4aa7b1d6bd3dc7019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 2324176234321250598, guid: 40693bddb5de9c7458772b0eb846baa5, type: 3}
+  - {fileID: 4495630839903833497, guid: 314cf15c9d807e641a993825ce7e5a76, type: 3}
+  - {fileID: 7851791029418025050, guid: aed3caf75c5e28549b0347d882c6f3a0, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
 --- !u!1 &5837012714721497330
 GameObject:
   m_ObjectHideFlags: 0

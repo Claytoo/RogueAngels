@@ -5735,6 +5735,10 @@ MonoBehaviour:
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   targetKill: 3
   door: {fileID: 455007104560706039}
+  itemDrops:
+  - {fileID: 2324176234321250598, guid: 40693bddb5de9c7458772b0eb846baa5, type: 3}
+  - {fileID: 4495630839903833497, guid: 314cf15c9d807e641a993825ce7e5a76, type: 3}
+  - {fileID: 7851791029418025050, guid: aed3caf75c5e28549b0347d882c6f3a0, type: 3}
 --- !u!4 &3381568416521602017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8716190808279524633, guid: b3de9bb55f6870845ae2fbf2a68f381b, type: 3}

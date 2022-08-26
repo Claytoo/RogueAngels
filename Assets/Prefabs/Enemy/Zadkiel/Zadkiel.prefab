@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7386262449730160290}
   - component: {fileID: 6983137374137980736}
   - component: {fileID: 1648306761}
+  - component: {fileID: -5416301601827601692}
   m_Layer: 0
   m_Name: Zadkiel
   m_TagString: Enemy
@@ -168,6 +169,8 @@ MonoBehaviour:
   currentHealth: 0
   healthSlider: {fileID: 6436732192996054914}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
+  defeatBossChecker: {fileID: 0}
+  isBoss: 0
 --- !u!114 &6983137374137980736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +222,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-5416301601827601692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360124990214973704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efedacd0619cff4aa7b1d6bd3dc7019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 2324176234321250598, guid: 40693bddb5de9c7458772b0eb846baa5, type: 3}
+  - {fileID: 4495630839903833497, guid: 314cf15c9d807e641a993825ce7e5a76, type: 3}
+  - {fileID: 7851791029418025050, guid: aed3caf75c5e28549b0347d882c6f3a0, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
+  - {fileID: 6168590260389641618, guid: 75abd124fa6268a4ebedf0055628c319, type: 3}
 --- !u!1 &5360124990341911901
 GameObject:
   m_ObjectHideFlags: 0
