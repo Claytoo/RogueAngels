@@ -6,24 +6,25 @@ public class GameFlowManager : MonoBehaviour
    public GameObject dialogueSequence;
    public GameObject blackImage;
    public GameObject pausePanel;
+   public GameObject winPanel;
    public float startActivate;
 
    public PlayerMovement playerMovement;
    public PlayerController playerController;
    public PlayerAttack playerAttack;
    public PlayerMagicSphere playerMagicSphere;
+
+   public ScriptableBoolean bossDefeated;
    
 
    private void Start()
    {
       Time.timeScale = 1;
-      
-      playerMovement.enabled = false;
-      playerController.enabled = false;
-      playerAttack.enabled = false;
-      playerMagicSphere.enabled = false;
+      bossDefeated.condition = false;
+      DeactivatePlayerComponent();
       
       blackImage.SetActive(true);
+      
       Invoke("ActivateDialogueSequence", startActivate);
    }
 
@@ -33,6 +34,7 @@ public class GameFlowManager : MonoBehaviour
       {
          PauseGame();
       }
+      checkBoss();
    }
 
    void ActivateDialogueSequence()
@@ -42,10 +44,7 @@ public class GameFlowManager : MonoBehaviour
 
    public void DeactivateDialogueSequence()
    {
-      playerMovement.enabled = true;
-      playerController.enabled = true;
-      playerAttack.enabled = true;
-      playerMagicSphere.enabled = true;
+      ActivatePlayerComponent();
       
       dialogueSequence.SetActive(false);
    }
@@ -65,5 +64,30 @@ public class GameFlowManager : MonoBehaviour
    public void changeScene(string targetScene)
    {
       SceneManager.LoadScene(targetScene);
+   }
+
+   void checkBoss()
+   {
+      if (bossDefeated.condition)
+      {
+         winPanel.SetActive(true);
+         DeactivatePlayerComponent();
+      }
+   }
+
+   void ActivatePlayerComponent()
+   {
+      playerMovement.enabled = true;
+      playerController.enabled = true;
+      playerAttack.enabled = true;
+      playerMagicSphere.enabled = true;
+   }
+
+   void DeactivatePlayerComponent()
+   {
+      playerMovement.enabled = false;
+      playerController.enabled = false;
+      playerAttack.enabled = false;
+      playerMagicSphere.enabled = false;
    }
 }

@@ -15,6 +15,9 @@ public class EnemyHealth : MonoBehaviour
 
     [Header("Scriptable Value")]
     public ScriptableInteger killCount;
+    public ScriptableBoolean defeatBossChecker;
+
+    public bool isBoss;
 
     private void Start()
     {
@@ -29,6 +32,10 @@ public class EnemyHealth : MonoBehaviour
         
         if (currentHealth <= 0)
         {
+            if (isBoss)
+            {
+                defeatBossChecker.condition = true;
+            }
             killCount.value++;
             Destroy(gameObject);
         }

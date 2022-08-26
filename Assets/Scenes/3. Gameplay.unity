@@ -2904,11 +2904,13 @@ MonoBehaviour:
   dialogueSequence: {fileID: 2143108349}
   blackImage: {fileID: 1160549053}
   pausePanel: {fileID: 1286400361}
+  winPanel: {fileID: 687698172}
   startActivate: 3
   playerMovement: {fileID: 1753866243}
   playerController: {fileID: 1753866242}
   playerAttack: {fileID: 1753866241}
   playerMagicSphere: {fileID: 1753866240}
+  bossDefeated: {fileID: 11400000, guid: 59925d0fda521c144afeddfce2451c2e, type: 2}
 --- !u!4 &950249742
 Transform:
   m_ObjectHideFlags: 0
@@ -4300,7 +4302,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1480517710}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 950249741}
+        m_TargetAssemblyTypeName: GameFlowManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3. Gameplay
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1480517710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5420,7 +5434,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1787469788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 950249741}
+        m_TargetAssemblyTypeName: GameFlowManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2. Main Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1787469788
 MonoBehaviour:
   m_ObjectHideFlags: 0
