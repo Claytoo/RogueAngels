@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0f246557098015c4f8b6aa99abf94267, type: 3}
   cooldownAttack: 3
 --- !u!1 &7743418068038601751
 GameObject:
@@ -128,7 +128,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 19d1e2f1bc1d53e40b66c667b3b2f320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fe672664461fd34893b7120fbf4f7fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,7 +190,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.6296296, y: 4.6296296}
+    oldSize: {x: 3.4722223, y: 3.4722223}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -258,7 +258,7 @@ Animator:
   m_GameObject: {fileID: 7743418068038601751}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 07b4b058e70736c4399a17589e70c748, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5abee7cf68117cf4d8253e1676488861, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0f246557098015c4f8b6aa99abf94267, type: 3}
   cooldownAttack: 3
 --- !u!1 &7743418068499710500
 GameObject:

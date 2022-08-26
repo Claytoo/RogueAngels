@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 576041524394407794}
   - component: {fileID: 8624160571036396798}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: Soldier Projectile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 576041524394407807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.33, y: 1.43, z: 0}
-  m_LocalScale: {x: 0.37836418, y: 0.37836418, z: 0.37836418}
+  m_LocalScale: {x: 0.2746924, y: 0.2746924, z: 0.2746924}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.8584906, g: 0.2713154, b: 0.2713154, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b0e3aa5055297c04a821e6767d62ec26, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,4 +115,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.5886049

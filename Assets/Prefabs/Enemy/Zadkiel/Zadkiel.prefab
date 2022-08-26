@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 19d1e2f1bc1d53e40b66c667b3b2f320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bd510ef4369dbc43ad77f87e0c939f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,18 +140,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.15382904}
+  m_Offset: {x: 0, y: -0.028795838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.6296296, y: 4.6296296}
+    oldSize: {x: 3.4722223, y: 3.4722223}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2682389, y: 2.717966}
+  m_Size: {x: 1.067024, y: 2.4678996}
   m_EdgeRadius: 0
 --- !u!114 &7386262449730160290
 MonoBehaviour:
@@ -212,7 +212,7 @@ Animator:
   m_GameObject: {fileID: 5360124990214973704}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 07b4b058e70736c4399a17589e70c748, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07e26580334d7af46828cb94014b3ba8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1 &5360124990610332451
 GameObject:
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1 &5360124990667218952
 GameObject:
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1 &5360124990827603771
 GameObject:
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1 &5360124991739961462
 GameObject:
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1 &5360124991792837039
 GameObject:
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7fec97930e674458c81b58b540ed78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
 --- !u!1001 &4098110661786236972
 PrefabInstance:
