@@ -8,6 +8,16 @@ public class ProjectileBehaviour : MonoBehaviour
     public float bulletSpeed = 5f;
     public float destroyTime = 15f;
 
+    public GameObject explosionEffect;
+    
+    public enum BulletFor
+    {
+        Player,
+        Enemy
+    }
+
+    public BulletFor bulletFor;
+
     private void Start()
     {
         Destroy(gameObject, destroyTime);
@@ -20,9 +30,21 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Player" || col.tag == "Enemy")
+        if (bulletFor == BulletFor.Enemy)
         {
-            Destroy(gameObject);
+            if (col.tag == "Player")
+            {
+                Instantiate(explosionEffect, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
+        }
+        else if (bulletFor == BulletFor.Player)
+        {
+            if (col.tag == "Enemy")
+            {
+                Instantiate(explosionEffect, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
         }
     }
 }
