@@ -35,10 +35,16 @@ public class EnemyHealth : MonoBehaviour
             if (isBoss)
             {
                 defeatBossChecker.condition = true;
+                Destroy(gameObject);
+                
             }
-            killCount.value++;
-            GetComponent<ItemDrops>().DropItem();
-            Destroy(gameObject);
+            else
+            {
+                killCount.value++;
+                GetComponent<ItemDrops>().DropItem();
+                Destroy(gameObject);
+            }
+            
         }
     }
 
