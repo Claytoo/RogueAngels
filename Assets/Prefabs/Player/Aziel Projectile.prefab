@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 576041524394407794}
   - component: {fileID: 8624160571036396798}
   m_Layer: 0
-  m_Name: Player Projectile
+  m_Name: Aziel Projectile
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

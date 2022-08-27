@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [Header("Player State Handler")]
     public GameObject azielStateHandler;
     public GameObject belielStateHandler;
+    public GameObject azielWeapon;
+    public GameObject belielWeapon;
     private bool azielState = true;
 
     [HideInInspector] public Rigidbody2D rigidBody;
@@ -45,6 +47,8 @@ public class PlayerController : MonoBehaviour
             {
                 azielStateHandler.SetActive(false);
                 belielStateHandler.SetActive(true);
+                belielWeapon.SetActive(true);
+                azielWeapon.SetActive(false);
                 azielState = false;
             }
 
@@ -52,6 +56,8 @@ public class PlayerController : MonoBehaviour
             {
                 azielStateHandler.SetActive(true);
                 belielStateHandler.SetActive(false);
+                azielWeapon.SetActive(true);
+                belielWeapon.SetActive(false);
                 azielState = true;
             }
         }

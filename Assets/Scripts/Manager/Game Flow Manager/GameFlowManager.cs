@@ -11,7 +11,7 @@ public class GameFlowManager : MonoBehaviour
 
    public PlayerMovement playerMovement;
    public PlayerController playerController;
-   public PlayerAttack playerAttack;
+   public PlayerAttack[] playerAttack;
    public PlayerMagicSphere playerMagicSphere;
 
    public ScriptableBoolean bossDefeated;
@@ -79,7 +79,11 @@ public class GameFlowManager : MonoBehaviour
    {
       playerMovement.enabled = true;
       playerController.enabled = true;
-      playerAttack.enabled = true;
+      for (int i = 0; i < playerAttack.Length; i++)
+      {
+         playerAttack[i].enabled = true;
+      }
+      
       playerMagicSphere.enabled = true;
    }
 
@@ -87,7 +91,10 @@ public class GameFlowManager : MonoBehaviour
    {
       playerMovement.enabled = false;
       playerController.enabled = false;
-      playerAttack.enabled = false;
+      for (int i = 0; i < playerAttack.Length; i++)
+      {
+         playerAttack[i].enabled = false;
+      }
       playerMagicSphere.enabled = false;
    }
 }
