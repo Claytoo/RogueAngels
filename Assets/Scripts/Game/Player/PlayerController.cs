@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public GameObject belielWeapon;
     private bool azielState = true;
 
+    [Header("Explosion Effect")]
+    public GameObject[] explosionEffect;
+
     [HideInInspector] public Rigidbody2D rigidBody;
     #endregion
 
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviour
             SoundManager.instance.PlaySound(5);
             if (azielState == true)
             {
+                Instantiate(explosionEffect[1], this.transform);
                 azielStateHandler.SetActive(false);
                 belielStateHandler.SetActive(true);
                 belielWeapon.SetActive(true);
@@ -54,6 +58,7 @@ public class PlayerController : MonoBehaviour
 
             else
             {
+                Instantiate(explosionEffect[0], this.transform);
                 azielStateHandler.SetActive(true);
                 belielStateHandler.SetActive(false);
                 azielWeapon.SetActive(true);

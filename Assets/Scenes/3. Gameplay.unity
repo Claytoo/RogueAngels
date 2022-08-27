@@ -5463,10 +5463,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3419076956475263847, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: explosionEffect.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419076956475263847, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: explosionEffect.Array.data[0]
+      value: 
+      objectReference: {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
+    - target: {fileID: 3419076956475263847, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: explosionEffect.Array.data[1]
+      value: 
+      objectReference: {fileID: 7491280805414915386, guid: 0692f1cf2db32ba4fbc6c8f413f7df09, type: 3}
     - target: {fileID: 5498986799733591257, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: armorSlider
       value: 
       objectReference: {fileID: 536584998}
+    - target: {fileID: 5542441576273486694, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146180435193848366, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: healthSlider
       value: 
