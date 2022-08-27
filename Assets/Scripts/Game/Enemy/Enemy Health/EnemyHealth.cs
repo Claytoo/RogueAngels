@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour
     public ScriptableInteger killCount;
     public ScriptableBoolean defeatBossChecker;
 
+    public GameObject explodsionEffect;
+
     public bool isBoss;
 
     private void Start()
@@ -41,6 +43,8 @@ public class EnemyHealth : MonoBehaviour
             else
             {
                 killCount.value++;
+                Instantiate(explodsionEffect, transform.position, Quaternion.identity);
+                SoundManager.instance.PlaySound(2);
                 GetComponent<ItemDrops>().DropItem();
                 Destroy(gameObject);
             }

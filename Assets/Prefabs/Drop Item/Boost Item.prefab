@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4495630839903833491}
   - component: {fileID: 4495630839903833490}
   - component: {fileID: 4495630839903833492}
+  - component: {fileID: 403136155390316096}
   m_Layer: 0
   m_Name: Boost Item
   m_TagString: Untagged
@@ -138,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc3e1a23d7ce884d829d6b2c69f9280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyByTime: 1
+  destroyTime: 8
 --- !u!114 &4495630839903833492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +157,18 @@ MonoBehaviour:
   OnTrigger:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 586467979619494011, guid: 40693bddb5de9c7458772b0eb846baa5, type: 3}
+        m_TargetAssemblyTypeName: AudioItem, Assembly-CSharp
+        m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4495630839903833490}
         m_TargetAssemblyTypeName: Destroyable, Assembly-CSharp
         m_MethodName: DestroyObject
@@ -181,3 +196,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &403136155390316096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495630839903833497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fd5cc1e2161504bb4da0fa1812cd96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

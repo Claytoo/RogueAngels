@@ -216,6 +216,7 @@ MonoBehaviour:
   healthSlider: {fileID: 2844666955452154025}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   defeatBossChecker: {fileID: 0}
+  explodsionEffect: {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
   isBoss: 0
 --- !u!114 &869835369
 MonoBehaviour:

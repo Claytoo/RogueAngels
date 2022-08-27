@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            SoundManager.instance.PlaySound(5);
             if (azielState == true)
             {
                 azielStateHandler.SetActive(false);

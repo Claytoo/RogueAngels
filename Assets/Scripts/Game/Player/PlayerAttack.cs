@@ -13,6 +13,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(projectile, shootPoint.position, shootPoint.rotation);
+            SoundManager.instance.PlaySound(0);
         }
     }
 }

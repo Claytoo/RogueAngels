@@ -17,6 +17,7 @@ public class EnemyAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldownAttack);
         Instantiate(projectile, transform.position, transform.rotation);
+        SoundManager.instance.PlaySound(3);
         yield return new WaitForSeconds(cooldownAttack);
         StartCoroutine(Attack());
     }
