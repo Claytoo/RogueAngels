@@ -15,6 +15,7 @@ public class PlayerArmorSystem : MonoBehaviour
 
     private void Start()
     {
+        armorScriptable.value = maxArmorScriptable.value;
         armorSlider.maxValue = maxArmorScriptable.value;
         armorSlider.value = maxArmorScriptable.value;
     }
