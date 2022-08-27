@@ -5491,6 +5491,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8549371792325423757, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: weaponSet2.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549371792325423757, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: weaponSet2.Array.data[0]
+      value: 
+      objectReference: {fileID: 1753866241}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: healthSlider
       value: 
@@ -5508,6 +5516,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f0ee005a4718747aceeb2fb9b00c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1753866241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7146180435193848366, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+  m_PrefabInstance: {fileID: 1753866239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1753866242 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3419076956475263847, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
