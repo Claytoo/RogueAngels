@@ -303,8 +303,8 @@ MonoBehaviour:
     take the rule of the heaven. Gabriel makes all the angels in the heaven bow to
     him and to anything for him."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
+  m_sharedMaterial: {fileID: -5916054567309131285, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -440,8 +440,8 @@ MonoBehaviour:
     together with a devil called Beliel. Together they can change personality in
     one body.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
+  m_sharedMaterial: {fileID: -5916054567309131285, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skip
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -987,8 +987,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Far at the heaven, there is an angel who was betrayed by the other angel.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
+  m_sharedMaterial: {fileID: -5916054567309131285, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1185,8 +1185,8 @@ MonoBehaviour:
     simple, because the theme of this gamejam is \u201CYou are not alone\u201D so
     we make the character is not alone."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
+  m_sharedMaterial: {fileID: -5916054567309131285, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1366,7 +1366,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -215, y: 115}
-  m_SizeDelta: {x: 249.466, y: 46.775}
+  m_SizeDelta: {x: 176, y: 62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721516175
 MonoBehaviour:
@@ -1456,8 +1456,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4ba487b8235b82546bca9f2bf5a2ce5e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

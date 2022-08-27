@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SpawnPlayer();
+        //SpawnPlayer();
     }
 
     internal void SpawnPlayer()

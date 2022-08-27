@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4495630839903833494}
   - component: {fileID: 4495630839903833493}
   - component: {fileID: 4495630839903833491}
+  - component: {fileID: 403136155390316096}
   - component: {fileID: 4495630839903833490}
   - component: {fileID: 4495630839903833492}
-  - component: {fileID: 403136155390316096}
   m_Layer: 0
   m_Name: Boost Item
   m_TagString: Untagged
@@ -127,6 +127,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832dd20f0d86994419c297c4a9183520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &403136155390316096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495630839903833497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fd5cc1e2161504bb4da0fa1812cd96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4495630839903833490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,15 +208,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &403136155390316096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4495630839903833497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74fd5cc1e2161504bb4da0fa1812cd96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

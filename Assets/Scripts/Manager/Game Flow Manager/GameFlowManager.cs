@@ -7,6 +7,7 @@ public class GameFlowManager : MonoBehaviour
    public GameObject blackImage;
    public GameObject pausePanel;
    public GameObject winPanel;
+   public GameObject losePanel;
    public float startActivate;
 
    public PlayerMovement playerMovement;
@@ -14,8 +15,10 @@ public class GameFlowManager : MonoBehaviour
    public PlayerAttack[] playerAttack;
    public PlayerMagicSphere playerMagicSphere;
 
+   public ScriptableInteger health;
+   public ScriptableInteger armor;
+
    public ScriptableBoolean bossDefeated;
-   
 
    private void Start()
    {
@@ -26,6 +29,9 @@ public class GameFlowManager : MonoBehaviour
       blackImage.SetActive(true);
       
       Invoke("ActivateDialogueSequence", startActivate);
+
+      health.ResetValue();
+      armor.ResetValue();
    }
 
    private void Update()
@@ -97,4 +103,10 @@ public class GameFlowManager : MonoBehaviour
       }
       playerMagicSphere.enabled = false;
    }
+
+    public void LoseCondition()
+    {
+        losePanel.SetActive(true);
+        DeactivatePlayerComponent();
+    }
 }

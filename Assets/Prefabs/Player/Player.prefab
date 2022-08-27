@@ -564,6 +564,9 @@ MonoBehaviour:
   belielStateHandler: {fileID: 5493226080063504863}
   azielWeapon: {fileID: 4194339798125267662}
   belielWeapon: {fileID: 5542441576273486694}
+  explosionEffect:
+  - {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
+  - {fileID: 7491280805414915386, guid: 0692f1cf2db32ba4fbc6c8f413f7df09, type: 3}
   rigidBody: {fileID: 7536679323914721478}
 --- !u!114 &7243514148202421176
 MonoBehaviour:
@@ -677,6 +680,8 @@ MonoBehaviour:
   weaponSet:
   - {fileID: 6416630151694090964}
   - {fileID: 6765268311572604509}
+  weaponSet2:
+  - {fileID: 7146180435193848366}
 --- !u!1 &2009240705373277154
 GameObject:
   m_ObjectHideFlags: 0

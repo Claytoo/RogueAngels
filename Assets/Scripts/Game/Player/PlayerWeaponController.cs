@@ -24,9 +24,9 @@ public class PlayerWeaponController : MonoBehaviour
             
         }
 
-        foreach (GameObject go2 in weaponSet2)
+        foreach (GameObject go in weaponSet2)
         {
-            go2.SetActive(false);
+            go.SetActive(false);
         }
     }
 

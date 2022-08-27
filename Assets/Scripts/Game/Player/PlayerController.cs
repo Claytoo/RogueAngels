@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public GameObject belielStateHandler;
     public GameObject azielWeapon;
     public GameObject belielWeapon;
+    public GameObject azielName;
+    public GameObject belielName;
     private bool azielState = true;
 
     [Header("Explosion Effect")]
@@ -53,6 +55,8 @@ public class PlayerController : MonoBehaviour
                 belielStateHandler.SetActive(true);
                 belielWeapon.SetActive(true);
                 azielWeapon.SetActive(false);
+                azielName.SetActive(false);
+                belielName.SetActive(true);
                 azielState = false;
             }
 
@@ -63,6 +67,8 @@ public class PlayerController : MonoBehaviour
                 belielStateHandler.SetActive(false);
                 azielWeapon.SetActive(true);
                 belielWeapon.SetActive(false);
+                azielName.SetActive(true);
+                belielName.SetActive(false);
                 azielState = true;
             }
         }
