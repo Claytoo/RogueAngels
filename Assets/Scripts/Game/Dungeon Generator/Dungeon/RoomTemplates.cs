@@ -16,10 +16,16 @@ public class RoomTemplates : MonoBehaviour
     public List<DungeonTransition> roomEntrance;
 
     public float waitTime;
+    public float bossSpawnTimeDelay;
     private bool spawnedBoss;
     public GameObject boss;
 
     public float bossYPosition;
+
+    private void Start()
+    {
+        bossSpawnTimeDelay = 2;
+    }
 
     private void Update()
     {
@@ -32,8 +38,14 @@ public class RoomTemplates : MonoBehaviour
                     if (roomEntrance[i].playerEntered)
                     {
                         Destroy(enemySpawner[i]);
-                        Instantiate(boss, new Vector3(rooms[i].transform.position.x, rooms[i].transform.position.y + bossYPosition), Quaternion.identity);
-                        spawnedBoss = true;
+
+                        bossSpawnTimeDelay -= Time.deltaTime;
+
+                        if (bossSpawnTimeDelay <= 0)
+                        {
+                            Instantiate(boss, new Vector3(rooms[i].transform.position.x, rooms[i].transform.position.y + bossYPosition), Quaternion.identity);
+                            spawnedBoss = true;
+                        }
                     }
                 }
             }

@@ -50,6 +50,7 @@ public class Boss_UltimateAttack : MonoBehaviour
 
     void ActivateLaser1()
     {
+        SoundManager.instance.PlaySound(1);
         lasers[0].SetActive(true);
         lasers[1].SetActive(false);
         lasers[2].SetActive(false);
@@ -64,6 +65,7 @@ public class Boss_UltimateAttack : MonoBehaviour
 
     void ActivateLaser2()
     {
+        SoundManager.instance.PlaySound(1);
         lasers[0].SetActive(false);
         lasers[1].SetActive(true);
         lasers[2].SetActive(false);
@@ -78,6 +80,7 @@ public class Boss_UltimateAttack : MonoBehaviour
 
     void ActivateLaser3()
     {
+        SoundManager.instance.PlaySound(1);
         lasers[0].SetActive(false);
         lasers[1].SetActive(false);
         lasers[2].SetActive(true);

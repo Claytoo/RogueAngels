@@ -20,6 +20,8 @@ public class BossAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
+        yield return new WaitForSeconds(transitionTime - 1);
+        
         ActivateSkll1();
 
         yield return new WaitForSeconds(skill1Time);

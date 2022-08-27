@@ -170,7 +170,7 @@ MonoBehaviour:
   healthSlider: {fileID: 6830017909333847855}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   defeatBossChecker: {fileID: 0}
-  explodsionEffect: {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
+  explodsionEffect: {fileID: 7491280805414915386, guid: 0600f3d1154cc7246bbc301eedb55d10, type: 3}
   isBoss: 0
 --- !u!114 &6120684676736843865
 MonoBehaviour:
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
   cooldownAttack: 1
+  soundCenter: 0
 --- !u!1001 &4559240573763829889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -466,6 +467,10 @@ PrefabInstance:
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477298607744566786, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7029191292162784454, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_AnchorMax.x

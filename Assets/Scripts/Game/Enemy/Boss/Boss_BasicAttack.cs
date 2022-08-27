@@ -9,6 +9,8 @@ public class Boss_BasicAttack : MonoBehaviour
     private float currentCooldown;
     public float cooldownTime = 3f;
 
+    public bool soundCenter;
+
     private void Start()
     {
         currentCooldown = cooldownTime;
@@ -31,6 +33,10 @@ public class Boss_BasicAttack : MonoBehaviour
         if (currentCooldown <= 0)
         {
             currentCooldown = cooldownTime;
+            if (soundCenter)
+            {
+                SoundManager.instance.PlaySound(3);
+            }
             Instantiate(projectile, transform.position, transform.rotation);
 
         }

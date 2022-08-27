@@ -8,6 +8,8 @@ public class EnemyAttack : MonoBehaviour
     public GameObject projectile;
     public float cooldownAttack;
 
+    public bool soundCenter;
+
     private void Start()
     {
         StartCoroutine(Attack());
@@ -17,7 +19,12 @@ public class EnemyAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldownAttack);
         Instantiate(projectile, transform.position, transform.rotation);
-        SoundManager.instance.PlaySound(3);
+
+        if (soundCenter)
+        {
+            SoundManager.instance.PlaySound(3);
+        }
+        
         yield return new WaitForSeconds(cooldownAttack);
         StartCoroutine(Attack());
     }

@@ -170,7 +170,7 @@ MonoBehaviour:
   healthSlider: {fileID: 6436732192996054914}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   defeatBossChecker: {fileID: 0}
-  explodsionEffect: {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
+  explodsionEffect: {fileID: 7491280805414915386, guid: 10c41d44cd33ea547b94f29b58d6471c, type: 3}
   isBoss: 0
 --- !u!114 &6983137374137980736
 MonoBehaviour:
@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 0
 --- !u!1 &5360124990610332451
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 0
 --- !u!1 &5360124990667218952
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 1
 --- !u!1 &5360124990827603771
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 0
 --- !u!1 &5360124991739961462
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 0
 --- !u!1 &5360124991792837039
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
   cooldownAttack: 2
+  soundCenter: 0
 --- !u!1001 &4098110661786236972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -666,6 +672,10 @@ PrefabInstance:
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477298607744566786, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_SizeDelta.x

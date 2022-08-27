@@ -424,8 +424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 1
+  soundCenter: 1
 --- !u!1 &4565494326323011860
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +589,7 @@ MonoBehaviour:
   healthSlider: {fileID: 4076925385666423998}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   defeatBossChecker: {fileID: 11400000, guid: 59925d0fda521c144afeddfce2451c2e, type: 2}
-  explodsionEffect: {fileID: 0}
+  explodsionEffect: {fileID: 7491280805414915386, guid: 9b81ebf2703435a4eb481324cda86309, type: 3}
   isBoss: 1
 --- !u!114 &8541057278414707764
 MonoBehaviour:
@@ -665,8 +666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597311634950434
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,8 +713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 1
 --- !u!1 &7240597311692775674
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,9 +726,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597311692775675}
   - component: {fileID: 7240597311692775672}
+  - component: {fileID: 1497332198}
   m_Layer: 0
   m_Name: Laser 3 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,6 +801,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1497332198
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597311692775674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597311833362613
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,9 +837,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597311833362602}
   - component: {fileID: 7240597311833362603}
+  - component: {fileID: 1325093251}
   m_Layer: 0
   m_Name: Laser 1 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,6 +912,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1325093251
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597311833362613}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597311929074067
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +982,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 1
+  soundCenter: 0
 --- !u!1 &7240597311940876900
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,8 +1029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 1
+  soundCenter: 0
 --- !u!1 &7240597312022167919
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,9 +1042,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597312022167916}
   - component: {fileID: 7240597312022167917}
+  - component: {fileID: 506159433}
   m_Layer: 0
   m_Name: Laser 3 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1057,6 +1117,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &506159433
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597312022167919}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597312062889042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,8 +1187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 1
+  soundCenter: 0
 --- !u!1 &7240597312141936568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,8 +1325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597312575221715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,8 +1425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597312647015678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,8 +1472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597312664635672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,9 +1485,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597312664635673}
   - component: {fileID: 7240597312664635678}
+  - component: {fileID: 910870761}
   m_Layer: 0
   m_Name: Laser 2 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1469,6 +1560,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &910870761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597312664635672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597312917535233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,9 +1596,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597312917535238}
   - component: {fileID: 7240597312917535239}
+  - component: {fileID: 1950410929}
   m_Layer: 0
   m_Name: Laser 2 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1553,6 +1671,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1950410929
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597312917535233}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597312948689478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,8 +1741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597313010720033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,9 +1754,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313010720038}
   - component: {fileID: 7240597313010720039}
+  - component: {fileID: 286053450}
   m_Layer: 0
   m_Name: Laser 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1683,6 +1829,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &286053450
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313010720033}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313027943378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,9 +1931,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313163545949}
   - component: {fileID: 7240597313163545938}
+  - component: {fileID: 1169965852}
   m_Layer: 0
   m_Name: Laser 1 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1833,6 +2006,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1169965852
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313163545948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313300897116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,8 +2076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 1
+  soundCenter: 0
 --- !u!1 &7240597313324093885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,8 +2123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597313475310477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,9 +2136,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313475310466}
   - component: {fileID: 7240597313475310467}
+  - component: {fileID: 1041903621}
   m_Layer: 0
   m_Name: Laser 3 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2009,6 +2211,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1041903621
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313475310477}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313532038931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,8 +2281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cd710c605a415479d39e0470e7eb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
+  projectile: {fileID: 576041524394407807, guid: c2f6a380e1bef3b45bfd357c14fdb058, type: 3}
   cooldownTime: 0.3
+  soundCenter: 0
 --- !u!1 &7240597313555754792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,9 +2294,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313555754793}
   - component: {fileID: 7240597313555754798}
+  - component: {fileID: 1676533321}
   m_Layer: 0
   m_Name: Laser 2 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2139,6 +2369,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1676533321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313555754792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313664364520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,9 +2405,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313664364521}
   - component: {fileID: 7240597313664364526}
+  - component: {fileID: 452286575}
   m_Layer: 0
   m_Name: Laser 2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2223,6 +2480,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &452286575
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313664364520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313670339247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,9 +2516,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313670339244}
   - component: {fileID: 7240597313670339245}
+  - component: {fileID: 1868667305}
   m_Layer: 0
   m_Name: Laser 1 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2307,6 +2591,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1868667305
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313670339247}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7240597313740876893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,9 +2627,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7240597313740876882}
   - component: {fileID: 7240597313740876883}
+  - component: {fileID: 481993934}
   m_Layer: 0
   m_Name: Laser 3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2391,6 +2702,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &481993934
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240597313740876893}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &8541057277995800457
 GameObject:
   m_ObjectHideFlags: 0

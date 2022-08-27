@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0f246557098015c4f8b6aa99abf94267, type: 3}
   cooldownAttack: 3
+  soundCenter: 0
 --- !u!1 &7743418068038601751
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +217,7 @@ MonoBehaviour:
   healthSlider: {fileID: 2844666955452154025}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   defeatBossChecker: {fileID: 0}
-  explodsionEffect: {fileID: 7491280805414915386, guid: 9817979fe98d84e4babd7ec3b3ae4920, type: 3}
+  explodsionEffect: {fileID: 7491280805414915386, guid: d8d18e4511ee1f6449299e8d4438afc6, type: 3}
   isBoss: 0
 --- !u!114 &869835369
 MonoBehaviour:
@@ -335,6 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0f246557098015c4f8b6aa99abf94267, type: 3}
   cooldownAttack: 3
+  soundCenter: 1
 --- !u!1 &7743418068499710500
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +515,10 @@ PrefabInstance:
     - target: {fileID: 3958472805972973635, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477298607744566786, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7029191290958622641, guid: 477ad6206c947234a9e928c1d7fc61fd, type: 3}
       propertyPath: m_SizeDelta.x
