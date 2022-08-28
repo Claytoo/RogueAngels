@@ -11,9 +11,25 @@ public class Boss_UltimateAttack : MonoBehaviour
     public GameObject[] lasers;
     public GameObject[] lasersTrajectory;
 
-    private void Start()
+    // private void Start()
+    // {
+    //     StartCoroutine(Attack());
+    // }
+
+    // private void OnTriggerStay2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         StartCoroutine(Attack());
+    //     }
+    // }
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        StartCoroutine(Attack());
+        if (col.tag == "Player")
+        {
+            StartCoroutine(Attack());
+        }
     }
 
     IEnumerator Attack()
