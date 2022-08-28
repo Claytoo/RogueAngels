@@ -4,8 +4,9 @@ public class ItemArmor : MonoBehaviour
 {
     public PlayerArmorSystem playerArmor;
 
-    public void OnGain()
+    public void OnGain(int gainAmmount)
     {
-        playerArmor.armorScriptable.value = playerArmor.armorScriptable.value + 1 > playerArmor.maxArmorScriptable.value ? playerArmor.maxArmorScriptable.value : playerArmor.armorScriptable.value + 1;
+        playerArmor.armorScriptable.value = 
+            playerArmor.armorScriptable.value + gainAmmount > playerArmor.maxArmorScriptable.value ? playerArmor.maxArmorScriptable.value : playerArmor.armorScriptable.value + gainAmmount;
     }
 }
