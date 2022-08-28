@@ -3238,7 +3238,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000015259, y: -71}
-  m_SizeDelta: {x: 1274.079, y: 485.437}
+  m_SizeDelta: {x: 704, y: 485.437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023027838
 MonoBehaviour:
@@ -3270,7 +3270,7 @@ MonoBehaviour:
     Nabil Usman - Game Artist
 
 
-    Yoana - Game Artist'
+    Yoana Dinar Atalya Silalahi - Game Artist'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
   m_sharedMaterial: {fileID: -5916054567309131285, guid: 04fc2d2bca529ff4e87bc7d5aa3ff906, type: 2}
@@ -3297,8 +3297,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 26.93
+  m_fontSizeBase: 26.93
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
