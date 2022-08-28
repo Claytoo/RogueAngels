@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddea3d7a13f54f4a8a891c9e1b08d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 3
+  totalHealth: 7
   currentHealth: 0
   healthSlider: {fileID: 6436732192996054914}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 0
 --- !u!1 &5360124990610332451
 GameObject:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 0
 --- !u!1 &5360124990667218952
 GameObject:
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 1
 --- !u!1 &5360124990827603771
 GameObject:
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 0
 --- !u!1 &5360124991739961462
 GameObject:
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 0
 --- !u!1 &5360124991792837039
 GameObject:
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: 0c7027fa3a1cf4345b889ebe2caa911c, type: 3}
-  cooldownAttack: 2
+  cooldownAttack: 0.5
   soundCenter: 0
 --- !u!1001 &4098110661786236972
 PrefabInstance:

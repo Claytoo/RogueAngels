@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BossAttack : MonoBehaviour
 {
     public float attackTime;
     public float transitionTime;
     public GameObject[] bossAttacks;
+    public GameObject[] items;
+    public Transform[] itemSpawnPoint;
 
     public float skill1Time;
     public float skill2Time;
@@ -27,6 +30,7 @@ public class BossAttack : MonoBehaviour
         yield return new WaitForSeconds(skill1Time);
         
         DeactivateAllSkill();
+        SpawnItem();
 
         yield return new WaitForSeconds(transitionTime);
         
@@ -35,6 +39,7 @@ public class BossAttack : MonoBehaviour
         yield return new WaitForSeconds(skill2Time);
         
         DeactivateAllSkill();
+        SpawnItem();
         
         yield return new WaitForSeconds(transitionTime);
         
@@ -44,6 +49,7 @@ public class BossAttack : MonoBehaviour
         yield return new WaitForSeconds(skill3Time);
         
         DeactivateAllSkill();
+        SpawnItem();
 
         yield return new WaitForSeconds(transitionTime);
 
@@ -76,5 +82,11 @@ public class BossAttack : MonoBehaviour
         bossAttacks[0].SetActive(false);
         bossAttacks[1].SetActive(false);
         bossAttacks[2].SetActive(false);
+    }
+
+    void SpawnItem()
+    {
+        Instantiate(items[Random.Range(0, items.Length)], itemSpawnPoint[Random.Range(0, itemSpawnPoint.Length)].position, Quaternion.identity);
+       
     }
 }
