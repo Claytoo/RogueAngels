@@ -1,5 +1,54 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &656809965367189708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2229958308960633105}
+  - component: {fileID: 527269198374838060}
+  m_Layer: 0
+  m_Name: EnemySpawnPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2229958308960633105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656809965367189708}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.64, y: 2.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8062424980678230494}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527269198374838060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656809965367189708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a3025e1c513f143961a2bb1361af91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 5837012714259865281, guid: 189b8f38032e3954c92b7e0cb9ec4ae6, type: 3}
+  - {fileID: 8054471785660509455, guid: 950963c41f1099e47a8348a02765c377, type: 3}
+  - {fileID: 7743418068038601751, guid: 141478871eeba984787a722c171d0b7d, type: 3}
+  - {fileID: 5360124990214973704, guid: 14158fe0d436a0d4dbdb5633f1e806c7, type: 3}
 --- !u!1 &2458094862944926631
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,6 +126,7 @@ MonoBehaviour:
   - {fileID: 3173539765804245450}
   - {fileID: 6290886913852890156}
   - {fileID: 7894203744177637317}
+  - {fileID: 527269198374838060}
   killCount: {fileID: 11400000, guid: ebc843695411e4b45a46d00c3971ee19, type: 2}
   isEntrance: 0
   playerEntered: 0
@@ -423,6 +473,7 @@ Transform:
   - {fileID: 3173539765804245451}
   - {fileID: 6290886913852890157}
   - {fileID: 7894203744177637316}
+  - {fileID: 2229958308960633105}
   m_Father: {fileID: 3082543083709222928}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -860,7 +911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7894203744177637315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6800003, y: -0.21, z: 0}
+  m_LocalPosition: {x: 5.97, y: -3.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

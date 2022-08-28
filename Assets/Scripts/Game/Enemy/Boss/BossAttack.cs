@@ -58,6 +58,7 @@ public class BossAttack : MonoBehaviour
 
     void ActivateSkll1()
     {
+        GetComponent<BoxCollider2D>().enabled = true;
         bossAttacks[0].SetActive(true);
         bossAttacks[1].SetActive(false);
         bossAttacks[2].SetActive(false);
@@ -65,6 +66,7 @@ public class BossAttack : MonoBehaviour
 
     void ActivateSkill2()
     {
+        GetComponent<BoxCollider2D>().enabled = false;
         bossAttacks[1].SetActive(true);
         bossAttacks[0].SetActive(false);
         bossAttacks[2].SetActive(false);
@@ -72,6 +74,7 @@ public class BossAttack : MonoBehaviour
 
     void ActivateSkill3()
     {
+        GetComponent<BoxCollider2D>().enabled = false;
         bossAttacks[2].SetActive(true);
         bossAttacks[1].SetActive(false);
         bossAttacks[0].SetActive(false);
@@ -79,6 +82,7 @@ public class BossAttack : MonoBehaviour
 
     void DeactivateAllSkill()
     {
+        GetComponent<BoxCollider2D>().enabled = true;
         bossAttacks[0].SetActive(false);
         bossAttacks[1].SetActive(false);
         bossAttacks[2].SetActive(false);

@@ -4971,7 +4971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009240705196274317, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 2009240705196274317, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5033,6 +5033,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1955050758}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ImmideitlyDie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: HealthSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564713685493059526, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: healthSlider
       value: 
@@ -5046,20 +5074,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
-      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 950249741}
+    - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1955050760}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
-      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoseCondition
       objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
-      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DestroyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameFlowManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+      propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Destroyable, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
       propertyPath: OnLifeReachZero.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5089,7 +5129,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3419076956475263847, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
   m_PrefabInstance: {fileID: 1753866239}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1955050753}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94c1fa2b8dbac174ab5efb36911df176, type: 3}
@@ -5777,6 +5817,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947578864}
   m_CullTransparentMesh: 1
+--- !u!1 &1955050753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2009240705196274355, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+  m_PrefabInstance: {fileID: 1753866239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1955050758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8820203859891250199, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+  m_PrefabInstance: {fileID: 1753866239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955050753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b538d4c4d139da4c9ffb8ebea302878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1955050760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7243514148202421176, guid: d976e80a3b9e38141ba0bff2b2c4a6d3, type: 3}
+  m_PrefabInstance: {fileID: 1753866239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955050753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc3e1a23d7ce884d829d6b2c69f9280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1955050762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955050753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96248aa7c08e20846883c22804ee65b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: LaserBeam
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1955050758}
+        m_TargetAssemblyTypeName: HealthSystem, Assembly-CSharp
+        m_MethodName: ImmideitlyDie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithGameobject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1981875980
 GameObject:
   m_ObjectHideFlags: 0

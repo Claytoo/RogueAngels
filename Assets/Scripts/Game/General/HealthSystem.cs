@@ -61,4 +61,10 @@ public class HealthSystem : MonoBehaviour
             }
         }
     }
+
+    public void ImmideitlyDie()
+    {
+        healthScriptable.value = 0;
+        OnLifeReachZero?.Invoke();
+    }
 }

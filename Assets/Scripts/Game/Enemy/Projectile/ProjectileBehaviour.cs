@@ -40,7 +40,7 @@ public class ProjectileBehaviour : MonoBehaviour
         }
         else if (bulletFor == BulletFor.Player)
         {
-            if (col.tag == "Enemy")
+            if (col.tag == "Enemy" || col.tag == "LaserBeam")
             {
                 Instantiate(explosionEffect, transform.position, Quaternion.identity);
                 Destroy(gameObject);

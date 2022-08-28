@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 576041524394407807, guid: ed5dff2db14ec5a4d8d6a0d88fa4dfbb, type: 3}
-  cooldownAttack: 1
+  cooldownAttack: 0.5
   soundCenter: 1
 --- !u!1001 &4559240573763829889
 PrefabInstance:
